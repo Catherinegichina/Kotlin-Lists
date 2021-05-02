@@ -1,0 +1,29 @@
+fun main(){
+println(words(listOf("Mathew","John","Mark","Luke","James","Haini","Beth","Amani","Cate","Dave","Isaac") as MutableList<String>))
+    println(long(listOf(2.3,8.5,9.6,9.7,8.8,8.2,8.7)))
+    println(mtu(listOf(Person("Sain Hai",40,9.3,85.4),
+                         Person("John Mbugua",9,1.0,27.5),
+                         Person("Annette Otis",11,1.7,37.7))))
+    println(mtu(listOf(Person("Eric Omondi",49,8.7,70.7),
+                        Person("JUnior Achieng",38,1.5,88.5))))
+    println(average(listOf(Car("KBA123T",30.45),
+                           
+   var total=heights.sum()
+    var newHeights= Long(average,total)
+    return newHeights
+}
+data class Person(var name:String,var age:Int,var height:Double,var weight:Double)
+fun arrange(person:List<Person>){
+    val descendingSortedPerson = person.sortedByDescending { person -> person.age }
+    println(descendingSortedPerson)
+    
+}
+fun mtu(person:List<Person>):List<Any> {
+    val someone= mutableListOf(person)
+     return someone
+}
+data class Car(var registration:String,var mileage:Double)
+fun average(car:List<Car>):Double{
+    val averageMileage=car.map{car->car.mileage}.average()
+    return averageMileage
+}
